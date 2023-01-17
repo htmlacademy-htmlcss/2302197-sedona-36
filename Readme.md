@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Ежов](https://up.htmlacademy.ru/htmlcss/36/user/2302197).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
