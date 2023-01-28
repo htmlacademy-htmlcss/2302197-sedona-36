@@ -39,7 +39,6 @@
     <main class="main-inner">
       <section class="filter-content">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html"><img src="#" alt="На главную">Главная</a>
@@ -55,7 +54,7 @@
 
       <section class="calalog-products">
         <h2 class="visually-hidden">Список предложений с фильтрами</h2>
-
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -124,8 +123,6 @@
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
         </select>
-      </section>
-      <section class="view">
         <button type="button" class="button button-dark">
           <span class="visually-hidden">Показать карточки</span>
         </button>
@@ -135,7 +132,6 @@
         <button type="button" class="button">
           <span class="visually-hidden">Показать список</span>
         </button>
-      </section>
 
       <ul class="product-list">
         <li class="product-card">
@@ -207,8 +203,9 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ol>
+      </section>
       <section class="subscribe">
-        <form action="https://echo.htmlacademy.ru/">
+        <form action="https://echo.htmlacademy.ru/" method="get">
           <h3>Подпишитесь на рассылку</h3>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <label for="subscription-email" class="visually-hidden">Ваш e-mail</label>
@@ -218,7 +215,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <h5 class="visually-hidden">Социальные сети</h5>
+      <h3 class="visually-hidden">Социальные сети</h3>
       <ul class="footer-social">
         <li class="footer-social-item">
           <a class="button" href="https://vk.com/htmlacademy">
