@@ -62,11 +62,17 @@ body {
 
 .advantages-title {
   text-transform: uppercase;
+  color: #333333;
 }
 
-.advantages-picture {
+.advantages-picture  {
 background-color: #82B3D3;
 color: #FFFFFF;
+}
+
+.advantages-title-picture {
+color:#FFFFFF;
+text-transform: uppercase;
 }
 
 .advantages-list li:nth-child(2) {
