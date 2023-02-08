@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -101,17 +102,17 @@
           </fieldset>
 
           <div class="price">
-            <h2>Стоимость, ₽:</h2>
+            <h2 class="price-heading">Стоимость, ₽:</h2>
             <!-- Блок с фильтрами -->
           </div>
-          <button class="button" type="submit">Применить</button>
+          <button class="button button-submit" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </form>
       </section>
 
       <section class="catalog">
         <h2 class=" vissually-hidden">Каталог гостиниц</h2>
-        <p class="search">
+        <p class="search subtitle">
           Найдено гостиниц:
           <span class="search-result">38</span>
         </p>
@@ -134,7 +135,7 @@
               <span class="visually-hidden">Показать список</span>
             </button>
           </li>
-        </ul>>
+        </ul>
 
         <ul class="product-list">
           <li class="product-card">
@@ -142,65 +143,65 @@
               <img class="product-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Amara">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
-            <span>Гостиница</span>
+            <span class="text">Гостиница</span>
             <b class="product-card-price">От 4000 ₽</b>
-            <a class="product-card-button more" href="#">Подробнее</a>
-            <button class="product-card-button favorite" type="button">в избранное</button>
+            <a class="product-card-button-more button" href="#">Подробнее</a>
+            <button class="product-card-button-favorite button" type="button">в избранное</button>
             <ul class="raiting">
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
             </ul>
-            <span class="raiting">Рейтинг: 8,5</span>
+            <span class="raiting-amount">Рейтинг: 8,5</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Poco">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
-            <span>Гостиница</span>
+            <span class="text">Гостиница</span>
             <b class="product-card-price">От 5000 ₽</b>
-            <a class="product-card-button more" href="#">Подробнее</a>
-            <button class="product-card-button favorite" type="button">в избранное</button>
+            <a class="product-card-button-more button" href="#">Подробнее</a>
+            <button class="product-card-button-favorite button" type="button">в избранное</button>
             <ul class="raiting">
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
             </ul>
-            <span class="raiting">Рейтинг: 9,2</span>
+            <span class="raiting-amount">Рейтинг: 9,2</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Quail">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
-            <span>Гостиница</span>
+            <span class="text">Гостиница</span>
             <b class="product-card-price">От 2500 ₽</b>
-            <a class="product-card-button more" href="#">Подробнее</a>
-            <button class="product-card-button favorite" type="button">в избранное</button>
+            <a class="product-card-button-more button" href="#">Подробнее</a>
+            <button class="product-card-button-favorite button" type="button">в избранное</button>
             <ul class="raiting">
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
             </ul>
-            <span class="raiting">Рейтинг: 6,9</span>
+            <span class="raiting-amount">Рейтинг: 6,9</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="GreenTree">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
-            <span>Гостиница</span>
+            <span class="text">Гостиница</span>
             <b class="product-card-price">От 1500 ₽</b>
-            <a class="product-card-button more" href="#">Подробнее</a>
-            <button class="product-card-button favorite" type="button">в избранное</button>
+            <a class="product-card-button-more button" href="#">Подробнее</a>
+            <button class="product-card-button-favorite button" type="button">в избранное</button>
             <ul class="raiting">
               <li class="raiting-star"></li>
               <li class="raiting-star"></li>
             </ul>
-            <span class="raiting">Рейтинг: 5,0</span>
+            <span class="raiting-amount">Рейтинг: 5,0</span>
           </li>
         </ul>
         <ol class="pagination">
@@ -225,9 +226,9 @@
         </ol>
       </section>
 
-      <section class="subscribe">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe-catalog">
+        <h2 class="subtitle">Подпишитесь на рассылку</h2>
+        <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscription-email" class="visually-hidden">Ваш e-mail</label>
           <input class="field" placeholder="email@example.com" type="email" id="subscription-email" required>
