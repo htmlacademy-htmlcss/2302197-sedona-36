@@ -98,17 +98,22 @@ margin: 0 auto;
   background-image: url("../images/index-background.jpg");
   background-size: auto;
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+  padding-top: 51px;
 }
 
 .welcome {
   display: block;
   margin: 0 auto;
+  width: 458px;
+  height: 352px;
 }
 
 .advantages-subtitle {
-width: 1200px;
-height: 261px;
-padding: 69px 0 69px 0;
+padding-top: 69px;
+padding-bottom: 69px;
+margin: 0 auto;
 }
 
 .subtitle {
@@ -124,12 +129,17 @@ padding: 69px 0 69px 0;
   color: #333333;
 }
 
+.text-main {
+  margin-top: 25px;
+}
+
 .advantages-list{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-
-
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title  {
@@ -165,6 +175,7 @@ color: #FFFFFF;
 .infrastructure {
   list-style: none;
   display: flex;
+  margin: 0;
 
 }
 
@@ -173,6 +184,7 @@ color: #FFFFFF;
   width: 400px;
   height: 385px;
 }
+
 
 .infrastructure li:nth-child(2) {
   background-color: #FFFFFF;
