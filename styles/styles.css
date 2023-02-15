@@ -121,12 +121,16 @@ margin: 0 auto;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+
 }
 
 .text {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin-top: 20px;
+  margin-bottom: 0
+
 }
 
 .text-main {
@@ -175,6 +179,13 @@ display: flex;
 width: 400px;
 }
 
+.advantages-item .advantages-title
+{
+padding-top: 102px;
+
+
+}
+
 
 .advantages-title-city {
 
@@ -202,6 +213,7 @@ width: 400px;
   list-style: none;
   display: flex;
   margin: 0;
+  padding: 0;
 
 }
 
@@ -209,6 +221,7 @@ width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   height: 385px;
+  padding: 81px;
 }
 
 
@@ -217,6 +230,15 @@ width: 400px;
 }
 
 .advantages-icon-subtitle {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.search {
+width: 592px;
+height: 214px;
+margin: 0 auto;
+padding: 96px 104px;
 
 }
 
@@ -232,14 +254,40 @@ width: 400px;
 
 .search .button {
   background-color: #756157;
+  margin-top: 54px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.page-footer {
+
+
+
 }
 
 .subscribe {
   background-image: url(../images/subscribe.jpg);
   background-color: #82B3D3;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
+  width: 1200px;
+  height: 414.86px;
+  margin: 0 auto;
+  padding-top: 96px;
+}
+
+.subscribe .text {
+  color: #FFFFFF;
+}
+
+.subscribe-email {
+display: flex;
+justify-content: center;
+margin-top: 54px;
 }
 
 .field {
