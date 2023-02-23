@@ -105,39 +105,41 @@
               <!-- Блок с фильтрами -->
             </div>
             <div class="button-filter">
-            <button class="button button-submit" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+              <button class="button button-submit" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
             </div>
           </div>
         </form>
       </section>
 
       <section class="catalog">
-        <h2 class=" vissually-hidden">Каталог гостиниц</h2>
-        <p class="search-subtitle">
-          Найдено гостиниц:
-          <span class="search-result">38</span>
-        </p>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-        </select>
-        <ul class="view-list">
-          <li class="view-item">
-            <button type="button" class="button button-mode">
-              <span class="visually-hidden">Показать карточки</span>
-            </button>
-          </li>
-          <li class="view-item">
-            <button type="button" class="button">
-              <span class="visually-hidden">Показать слайды</span>
-            </button>
-          </li>
-          <li class="view-item">
-            <button type="button" class="button">
-              <span class="visually-hidden">Показать список</span>
-            </button>
-          </li>
-        </ul>
+        <h2 class=" visually-hidden">Каталог гостиниц</h2>
+        <div class="catalog-container">
+          <p class="search-subtitle">
+            НАЙДЕНО ГОСТИНИЦ:
+            <span class="search-result">38</span>
+          </p>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+          </select>
+          <ul class="view-list">
+            <li class="view-item">
+              <button type="button" class="button button-mode">
+                <span class="visually-hidden">Показать карточки</span>
+              </button>
+            </li>
+            <li class="view-item">
+              <button type="button" class="button">
+                <span class="visually-hidden">Показать слайды</span>
+              </button>
+            </li>
+            <li class="view-item">
+              <button type="button" class="button">
+                <span class="visually-hidden">Показать список</span>
+              </button>
+            </li>
+          </ul>
+        </div>
 
         <ul class="product-list">
           <li class="product-card">
@@ -220,7 +222,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-current" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -231,7 +233,7 @@
       <section class="subscribe-catalog">
         <h2 class="subtitle">Подпишитесь на рассылку</h2>
         <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscription-email" class="visually-hidden">Ваш e-mail</label>
           <input class="field" placeholder="email@example.com" type="email" id="subscription-email" required>
           <button class="button-subscription" type="submit">Подписаться</button>
@@ -240,27 +242,27 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-conteiner">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social">
-          <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademy.ru">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="footer-telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-logo" href="#"></a>
-      </div>
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="footer-social">
+        <li class="footer-social-item">
+          <a class="button" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.youtube.com/user/htmlacademy.ru">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-logo" href="#"></a>
+    </div>
     </footer>
 
   </body>

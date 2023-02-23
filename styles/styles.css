@@ -46,10 +46,6 @@ body {
   outline-offset: -5px;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 .navigation {
   display: flex;
   width: 1200px;
@@ -100,7 +96,7 @@ body {
 .main-container {
   width: 1200px;
   margin: 0 auto;
-
+  flex-grow: 1;
 }
 
 .main-index {
@@ -135,10 +131,12 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .search .subtitle {
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .text {
@@ -177,7 +175,6 @@ body {
   margin-left: 85px;
   margin-right: 85px;
 }
-
 
 .advantages-title-big {
   color: #FFFFFF;
@@ -295,7 +292,7 @@ body {
   background-repeat: no-repeat;
   color: #FFFFFF;
   width: 1200px;
-  height: 414.86px;
+  min-height: 415px;
   margin: 0 auto;
   padding-top: 96px;
 
@@ -375,20 +372,33 @@ body {
   text-align: center;
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
 .filter-content {
   background-color: #82B3D3;
   background-image: url(../images/catalog-background.jpg);
   color: #FFFFFF;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   font-weight: 700;
   width: 1200px;
   height: 412px;
+  padding-left: 70px;
+  padding-top: 35px;
 }
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .catalog-filter-title {
@@ -420,6 +430,7 @@ body {
 .catalog-filter-list {
   width: 150px;
   height: 157px;
+  list-style-type: none;
 }
 
 .catalog-filter-container {
@@ -439,7 +450,6 @@ body {
   margin-top: 48px;
 }
 
-
 .button-filter {
   display: flex;
   flex-direction: column;
@@ -447,14 +457,50 @@ body {
 
 .catalog {
   width: 1200px;
-  height: 1235px;
+  min-height: 1235px;
+  padding-left: 70px;
+  padding-top: 50px;
+}
 
+.catalog-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.view-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.view-list .button {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  background-color: #FFFFFF;
 }
 
 .select-control {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 292px;
+  height: 49px;
+  outline: 2px solid #E5E5E5;
+  border: 0;
+  margin-right: 70px;
+  padding-left: 20px;
+}
+
+.search-subtitle {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 200px;
 }
 
 .product-list {
@@ -502,6 +548,16 @@ body {
   text-transform: uppercase;
 }
 
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
 
 .pagination-link {
   font-size: 20px;
@@ -509,6 +565,12 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 12px;
 }
 
 .pagination-current {
