@@ -459,6 +459,7 @@ body {
   width: 1200px;
   min-height: 1235px;
   padding-left: 70px;
+  padding-right: 70px;
   padding-top: 50px;
 }
 
@@ -505,8 +506,20 @@ body {
 
 .product-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  gap: 20px;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
 }
 
 .product-card-link {
@@ -515,11 +528,29 @@ body {
   color: #000000;
   text-decoration: none;
   font-weight: 700;
+  display: grid;
+  grid-column: 1/-1;
+}
+
+.product-card-image link {
+  grid-column: 2/-1;
+}
+
+.product-card-title {
+  grid-column: 1/-1;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.product-card-hotel {
+  grid-column: 1/2;
 }
 
 .product-card .text {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .product-card-price {
@@ -527,6 +558,8 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  grid-column: 2/3;
+  justify-self: end;
 }
 
 .product-card-button-more {
@@ -540,12 +573,22 @@ body {
   line-height: 20px;
 }
 
+.raiting {
+  display: flex;
+  justify-content: start;
+}
+
 .raiting-amount {
   font-size: 16px;
   line-height: 20px;
   background-color: #F2F2F2;
   color: #333333;
   text-transform: uppercase;
+  justify-self: center;
+  width: 140px;
+  height: 37px;
+  text-align: center;
+  padding-top: 9px;
 }
 
 .pagination {
