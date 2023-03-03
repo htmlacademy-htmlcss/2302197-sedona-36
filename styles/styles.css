@@ -296,6 +296,7 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 
 .search .button {
@@ -361,6 +362,7 @@ body {
   height: 52px;
   box-sizing: border-box;
   border: 0;
+  cursor: pointer;
 }
 
 .page-footer {
@@ -676,7 +678,6 @@ body {
 
 .pagination-empty {
   background-color: #FFFFFF;
-
 }
 
 .subscribe-catalog {
