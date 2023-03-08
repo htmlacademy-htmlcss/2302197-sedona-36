@@ -79,6 +79,24 @@ body {
   padding: 0;
 }
 
+.navigation-icon::before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #7DB54F;
+  content: "12";
+  border-radius: 10px;
+  top: 11px;
+  left: 20px;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+  font-family: "PT Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navigation-link {
   display: block;
   padding: 20px 16px;
@@ -131,8 +149,6 @@ body {
 
 .navigation-user .navigation-item:nth-child(3)
 .navigation-link {
-  background-color: #756157;
-  color: #FFFFFF;
   width: 160px;
   min-height: 36px;
   font-size: 16px;
@@ -359,6 +375,7 @@ body {
 }
 
 .button {
+  font-family: "PT Sans";
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 700;
@@ -369,22 +386,43 @@ body {
   border-radius: 4px;
 }
 
-/*
-.button:hover {
-  background-color: #68A2CA;
+.button-brown {
+  border-radius: 4px;
+  background-color: #756157;
+  color: #FFFFFF;;
 }
 
-.button:focus {
-  background-color: #68A2CA;
+.button-brown:hover {
+  background-color: #615048;
 }
 
-button:active {
+.button-brown:focus {
+  background-color: #615048
+}
+
+.button-brown:active {
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
-*/
+
+.button-blue {
+  border: none;
+}
+
+.button-blue:hover {
+  background-color: #68A2CA;
+}
+
+.button-blue:focus {
+  background-color: #68A2CA;
+}
+
+.button-blue:active {
+  background-color: #82B3D3;
+  color:rgba(255, 255, 255, 0.3);
+}
 
 .search .button {
-  background-color: #756157;
   margin-top: 54px;
   padding-left: 8px;
   padding-right: 8px;
@@ -411,7 +449,6 @@ button:active {
   padding-left: 70px;
   padding-right: 70px;
   box-sizing: border-box;
-
 }
 
 .subscribe .text {
@@ -439,6 +476,11 @@ button:active {
 
 .field:hover {
   background-color: #E6E6E6;
+}
+
+.field:focus {
+  background-color: #E6E6E6;
+  border: 2px solid #83B3D3;
 }
 
 .field:focus-visible {
@@ -754,6 +796,16 @@ button:active {
   gap: 20px;
 }
 
+/*
+.catalog::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #E6E6E6;
+  width: 1060px;
+  bottom: 160px;
+}
+*/
+
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
@@ -857,6 +909,7 @@ button:active {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .pagination {
