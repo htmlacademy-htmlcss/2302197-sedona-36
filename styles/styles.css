@@ -468,6 +468,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-brown:disabled {
+  background-color: #E5E5E5;
+  color: rgba(255, 255, 255, 0.2);
+}
 .button-blue {
   border: none;
 }
@@ -483,6 +487,11 @@ body {
 .button-blue:active {
   background-color: #82B3D3;
   color:rgba(255, 255, 255, 0.3);
+}
+
+.button-blue:active {
+  background-color: #E5E5E5;
+  color:rgba(255, 255, 255, 0.2);
 }
 
 .search .button {
@@ -774,6 +783,20 @@ body {
   margin-top: 32px;
   overflow-wrap: break-word;
   box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+}
+
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reset:disabled {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .button-filter {
@@ -1122,18 +1145,28 @@ body {
   display: flex;
 }
 
+.range-wrapper-inputs span {
+  position: absolute;
+  content: "от";
+  right: 20px;
+  transform: translateY(40%);
+  width: 20px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(170, 170, 170)
+}
+
 .catalog-filter-label {
   display: flex;
   margin-right: 2px;
+  position: relative;
 }
 
 .range-input-min {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-}
-
-.range-input-min::placeholder {
-
 }
 
 .range-input-max {
@@ -1168,8 +1201,12 @@ body {
   background-color: #FFFFFF;
 }
 
-.control:focus .control-mark {
-  border: 3px solid #83B3D3;
+.control:focus-within .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  outline: 2px solid #83B3D3;
 }
 
 .control-label {
@@ -1178,4 +1215,26 @@ body {
 
 .control-mark-border {
   border-radius: 10px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  background-image: url(../images/tick-checkbox.svg);
+  width: 12px;
+  height: 10px;
+  top: 5px;
+  left: 4px;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  background-image: url(../images/tick-radio.svg);
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  content: "";
 }
