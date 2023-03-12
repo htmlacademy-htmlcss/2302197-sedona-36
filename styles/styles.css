@@ -1495,7 +1495,6 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-top: 15px;
   padding-bottom: 18px;
   border-radius: 10px;
-  display: block;
   width: 256px;
   position: absolute;
   bottom: 100%;
@@ -1504,7 +1503,14 @@ input[type="number"]::-webkit-inner-spin-button {
   transform: translate(-120px,240px);
   z-index: 1;
   box-sizing: border-box;
+  display: none;
 }
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
 
 .tooltip {
   position: absolute;
