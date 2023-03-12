@@ -173,18 +173,21 @@
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
+          <svg class="modal-close-button-svg" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="26" fill="#F2F2F2"/>
+            <path d="M33.4905 20.7829L32.1982 19.4906L26.4905 25.1983L20.7828 19.4906L19.4905 20.7829L25.1982 26.4906L19.4905 32.1983L20.7828 33.4906L26.4905 27.7829L32.1982 33.4906L33.4905 32.1983L27.7828 26.4906L33.4905 20.7829Z" fill="black"/>
+            </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-arrival">
-              <label for="modal-form-arrival">
-                <span class="modal-arrival-date">Дата заезда:</span>
+              <label for="modal-form-arrival" class="modal-form-arrival">
+                <span class="modal-arrival-date">Дата Заезда:</span>
               </label>
-              <div>
-                <input class="modal-input-date" type="text" name="arrival" id="arrival" placeholder="Укажите дату" required="">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <input class="modal-input-date" type="text" name="arrival" id="modal-form-arrival" placeholder="Укажите дату" required="">
+                <svg class="modal-calendar" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" fill="black"/>
                   <path d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z" fill="black"/>
                   <path d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z" fill="black"/>
@@ -197,14 +200,15 @@
                   <path d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z" fill="black"/>
                   <path d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z" fill="black"/>
                   </svg>
-                <span class="text-false">Мы не можем отправить вас в прошлое.</span>
-              </div>
-              <div class="modal-departure">
+            </div>
+            <span class="text-false">Мы не можем отправить вас в прошлое.</span>
+
+            <div class="modal-departure">
                 <label for="modal-form-departure">
-                  <span class="modal-departure-date">Дата выезда</span>
-
-                <input class="modal-input-date" type="text" name="departure" id="departure" placeholder="Укажите дату" required="">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <span class="modal-departure-date">Дата Выезда</span>
+                </label>
+                <input class="modal-input-date" type="text" name="departure" id="modal-form-departure" placeholder="Укажите дату" required="">
+                <svg class="departure-calendar" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" fill="black"/>
                   <path d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z" fill="black"/>
                   <path d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z" fill="black"/>
@@ -217,9 +221,69 @@
                   <path d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z" fill="black"/>
                   <path d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z" fill="black"/>
                   </svg>
-
-                  <span class="text-true">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
+                  <span class="text-true">На эти даты есть свободные номера. Пока есть.</span>
+
+
+<div class="modal-visitors">
+              <div class="modal-adults">
+              <label for="modal-form-adults" class="modal-form-adults">
+                <span class="modal-adults-amount">Взрослые</span>
+              </label>
+
+              <button class="button-minus" type="button">
+                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+              <input class="modal-input-amount" type="number" name="departure" id="modal-form-adults" value="2">
+              <button class="button-plus" type="button">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+
+            </div>
+
+            <div class="modal-child">
+
+              <!-- Тултип -->
+              <span class="modal-form-child">
+                <label for="modal-form-child">
+                  <span class="modal-child-amount">Дети</span>
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="currentColor"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                      </svg>
+                  </button>
+                 <span class="tooltip-text">Укажите количество детей, которые будут с вами,
+                    возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                </span>
+              </span>
+
+              <button class="button-minus" type="button">
+                <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+              <input class="modal-input-amount" type="number" name="departure" id="modal-form-child" value="2">
+              <button class="button-plus" type="button">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+            </div>
+</div>
+              <button class="modal-search button button-blue" type="submit">НАЙТИ</button>
+
+
+
+                </div>
+
             </div>
 
           </form>
