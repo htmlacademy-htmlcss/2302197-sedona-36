@@ -57,6 +57,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  align-items: flex-start;
 }
 
 .navigation-list {
@@ -92,6 +93,7 @@ body {
   margin-right: 70px;
   max-width: 310px;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .navigation-user .navigation-link {
