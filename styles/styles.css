@@ -240,6 +240,8 @@ body {
 .advantages-subtitle {
   padding-top: 69px;
   padding-bottom: 90px;
+  padding-left: 70px;
+  padding-right: 70px;
   margin: 0 auto;
 }
 
@@ -291,6 +293,7 @@ body {
 .advantages-list .advantages-description {
   margin-top: 62px;
   margin-bottom: 0;
+  position: relative;
 }
 
 .advantages-title-state::before {
@@ -347,14 +350,13 @@ body {
   width: 400px;
 }
 
-.advantages-title-picture::before {
+.advantages-title-picture .advantages-description::before {
   content: " ";
   background: rgba(255, 255, 255, 0.3);
   width: 60px;
   height: 2px;
-  left: 170px;
-  right: 170px;
-  top: 188px;
+  left: 85px;
+  top: -30px;
   position: absolute;
 }
 
@@ -384,21 +386,19 @@ body {
   color: #333333;
 }
 
-
 .advantages-title-picture {
 padding-top: 102px;
 }
 
-.advantages-item-square::before,
-.advantages-item-road::before,
-.advantages-item-tourist::before {
+.advantages-item-square .advantages-description::before,
+.advantages-item-road .advantages-description::before,
+.advantages-item-tourist .advantages-description::before {
   content: " ";
   background: rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 2px;
-  left: 170px;
-  right: 170px;
-  top: 198px;
+  left: 85px;
+  top: -30px;
   position: absolute;
 }
 
@@ -458,6 +458,8 @@ padding-top: 102px;
   padding-top: 96px;
   padding-bottom: 96px;
   box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .button {
@@ -1025,6 +1027,7 @@ padding-top: 102px;
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
+  align-items: end;
   gap: 16px 20px;
   padding: 20px;
   outline: 1px solid #E6E6E6;
@@ -1038,6 +1041,7 @@ padding-top: 102px;
   font-weight: 700;
   display: grid;
   grid-column: 1/-1;
+  align-self: start;
 }
 
 .product-list .product-card-title {
@@ -1101,7 +1105,9 @@ padding-top: 102px;
   align-items: center;
   padding: 0;
   list-style-type:none;
-  }
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 .raiting-star {
   background-image: url("../images/star.svg");
@@ -1189,6 +1195,8 @@ padding-top: 102px;
   padding-top: 96px;
   padding-bottom: 96px;
   box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .range-scale {
