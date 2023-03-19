@@ -290,6 +290,7 @@ body {
 
 .advantages-list .advantages-description {
   margin-top: 62px;
+  margin-bottom: 0;
 }
 
 .advantages-title-state::before {
@@ -326,7 +327,7 @@ body {
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .advantages-item-road {
@@ -796,9 +797,9 @@ padding-top: 102px;
   background-repeat: no-repeat;
   font-weight: 700;
   width: 1200px;
-  height: 412px;
+  min-height: 412px;
   padding-left: 70px;
-  padding-top: 35px;
+  padding-top: 35px;;
   box-sizing: border-box;
 }
 
@@ -853,7 +854,7 @@ padding-top: 102px;
 
 .catalog-filter-list {
   width: 150px;
-  height: 157px;
+  min-height: 157px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -862,7 +863,7 @@ padding-top: 102px;
 .catalog-filter-container {
   display: flex;
   width: 1060px;
-  height: 160px;
+  min-height: 160px;
 }
 
 .button-submit {
@@ -922,7 +923,7 @@ padding-top: 102px;
 
 .catalog-container {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-bottom: 40px;
 }
 
@@ -1007,6 +1008,8 @@ padding-top: 102px;
   font-weight: 700;
   margin: 0;
   margin-right: 200px;
+  max-width: 338px;
+  padding-top: 7px;
 }
 
 .product-list {
@@ -1239,11 +1242,13 @@ padding-top: 102px;
   right: 0;
 }
 .range-input {
-  width: 103px;
+  width: 143px;
   padding: 12px 20px;
   font:inherit;
   border: none;
   background-color: #F2F2F2;
+  box-sizing: border-box;
+  padding-right: 50px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1278,6 +1283,7 @@ padding-top: 102px;
 .range-input-min {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+
 }
 
 .range-input-max {
@@ -1407,6 +1413,9 @@ padding-top: 102px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  max-width: 115px;
+  display: block;
+  padding-top: 12px;
 }
 
 .modal-child-amount {
@@ -1482,7 +1491,7 @@ padding-top: 102px;
 .modal-arrival {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   position: relative;
 }
 
@@ -1507,7 +1516,7 @@ padding-top: 102px;
 .modal-departure {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   position: relative;
   margin-top: 23px;
 }
@@ -1519,13 +1528,13 @@ padding-top: 102px;
 
 .modal-adults {
   display: flex;
-  align-items: center;
+  align-items: start;
   width: 247px;
 }
 
 .modal-child {
   display: flex;
-  align-items: center;
+  align-items: start;
   box-sizing: border-box;
 }
 
@@ -1590,6 +1599,7 @@ input[type='number'] {
   padding: 0;
   margin: 0;
   display: block;
+  padding-top: 12px;
 }
 
 .tooltip-icon {
@@ -1695,4 +1705,14 @@ input[type='number'] {
 
 .modal-button svg:active {
   fill: rgba(117, 97, 87, 0.3);
+}
+
+.photo-residence {
+  object-fit: cover;
+  height: 100%;
+}
+
+.photo-grand-canyon {
+  object-fit: cover;
+  height: 100%;
 }
