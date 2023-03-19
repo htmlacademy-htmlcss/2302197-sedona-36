@@ -47,7 +47,7 @@ body {
 .body-container {
   background-color: #FFFFFF;
   width: 1200px;
-  box-shadow: 1px 1px 15px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
 }
@@ -290,6 +290,7 @@ body {
 
 .advantages-list .advantages-description {
   margin-top: 62px;
+  margin-bottom: 0;
 }
 
 .advantages-title-state::before {
@@ -315,6 +316,7 @@ body {
 .infrastructure .advantages-description {
   width: 230px;
   margin: 0;
+  color: #333333;
 }
 
 .advantages-title-big {
@@ -325,7 +327,7 @@ body {
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .advantages-item-road {
@@ -375,6 +377,13 @@ body {
   box-sizing: border-box;
   position: relative;
 }
+
+.advantages-item-square .advantages-description,
+.advantages-item-road .advantages-description,
+.advantages-item-tourist .advantages-description {
+  color: #333333;
+}
+
 
 .advantages-title-picture {
 padding-top: 102px;
@@ -438,6 +447,8 @@ padding-top: 102px;
 .advantages-icon-subtitle {
   padding-top: 64px;
   padding-bottom: 64px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .search {
@@ -482,7 +493,7 @@ padding-top: 102px;
 
 .button-brown:disabled {
   background-color: #E5E5E5;
-  color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
 }
 .button-blue {
   border: none;
@@ -503,7 +514,7 @@ padding-top: 102px;
 
 .button-blue:disabled {
   background-color: #E5E5E5;
-  color:rgba(255, 255, 255, 0.2);
+  color:#FFFFFF;
 }
 
 .button-green {
@@ -526,7 +537,7 @@ padding-top: 102px;
 
 .button-green:disabled {
   background-color: #E5E5E5;
-  color:rgba(255, 255, 255, 0.2);
+  color:#FFFFFF;
 }
 
 .search .button {
@@ -572,6 +583,7 @@ padding-top: 102px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
   background-color: #F2F2F2;
   width: 452px;
   height: 52px;
@@ -581,6 +593,13 @@ padding-top: 102px;
   border-bottom-left-radius: 4px;
   padding-left: 20px;
   padding-right: 20px;
+  color: #000000;
+}
+
+.field::placeholder {
+  color: #000000;
+  opacity: 0.6;
+  font-weight: 400;
 }
 
 .field:hover {
@@ -589,12 +608,12 @@ padding-top: 102px;
 
 .field:focus {
   background-color: #E6E6E6;
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .field:focus-visible {
   background-color: #F2F2F2;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .button-subscription {
@@ -718,7 +737,6 @@ padding-top: 102px;
 }
 
 .breadcrumbs-item {
-  margin-right: 29px;
   position: relative;
 }
 
@@ -744,6 +762,9 @@ padding-top: 102px;
 
 .breadcrumbs-link-main {
   color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 29px;
 }
 
 .breadcrumbs-link-main:hover {
@@ -776,9 +797,9 @@ padding-top: 102px;
   background-repeat: no-repeat;
   font-weight: 700;
   width: 1200px;
-  height: 412px;
+  min-height: 412px;
   padding-left: 70px;
-  padding-top: 35px;
+  padding-top: 35px;;
   box-sizing: border-box;
 }
 
@@ -833,7 +854,7 @@ padding-top: 102px;
 
 .catalog-filter-list {
   width: 150px;
-  height: 157px;
+  min-height: 157px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -842,7 +863,7 @@ padding-top: 102px;
 .catalog-filter-container {
   display: flex;
   width: 1060px;
-  height: 160px;
+  min-height: 160px;
 }
 
 .button-submit {
@@ -902,7 +923,7 @@ padding-top: 102px;
 
 .catalog-container {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-bottom: 40px;
 }
 
@@ -942,6 +963,7 @@ padding-top: 102px;
   background-image: url("../images/cursor-down.svg");
   background-repeat: no-repeat;
   background-position: 258px;
+  background-color: #FFFFFF;
 }
 
 .select-control:hover {
@@ -950,6 +972,12 @@ padding-top: 102px;
 
 .select-control:focus {
   border-color: #3F5E72;
+  outline: none;
+}
+
+.select-control:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   outline: none;
 }
 
@@ -980,6 +1008,8 @@ padding-top: 102px;
   font-weight: 700;
   margin: 0;
   margin-right: 200px;
+  max-width: 338px;
+  padding-top: 7px;
 }
 
 .product-list {
@@ -1212,11 +1242,13 @@ padding-top: 102px;
   right: 0;
 }
 .range-input {
-  width: 103px;
+  width: 143px;
   padding: 12px 20px;
   font:inherit;
   border: none;
   background-color: #F2F2F2;
+  box-sizing: border-box;
+  padding-right: 50px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1251,6 +1283,7 @@ padding-top: 102px;
 .range-input-min {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+
 }
 
 .range-input-max {
@@ -1331,7 +1364,7 @@ padding-top: 102px;
   position: fixed;
   top: 0;
   left: 0;
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
   background-color:rgba(242, 242, 242, 0.8);
@@ -1380,6 +1413,9 @@ padding-top: 102px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  max-width: 115px;
+  display: block;
+  padding-top: 12px;
 }
 
 .modal-child-amount {
@@ -1399,6 +1435,12 @@ padding-top: 102px;
   border: none;
   background-color: #F2F2F2;
   margin-bottom: 4px;
+  color: #000000;
+}
+
+.modal-input-date::placeholder {
+  color: #000000;
+  opacity: 0.6;
 }
 
 .modal-input-date:hover {
@@ -1449,7 +1491,7 @@ padding-top: 102px;
 .modal-arrival {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   position: relative;
 }
 
@@ -1474,7 +1516,7 @@ padding-top: 102px;
 .modal-departure {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   position: relative;
   margin-top: 23px;
 }
@@ -1486,13 +1528,13 @@ padding-top: 102px;
 
 .modal-adults {
   display: flex;
-  align-items: center;
+  align-items: start;
   width: 247px;
 }
 
 .modal-child {
   display: flex;
-  align-items: center;
+  align-items: start;
   box-sizing: border-box;
 }
 
@@ -1557,6 +1599,7 @@ input[type='number'] {
   padding: 0;
   margin: 0;
   display: block;
+  padding-top: 12px;
 }
 
 .tooltip-icon {
@@ -1631,6 +1674,12 @@ input[type='number'] {
   fill: #E6E6E6;
 }
 
+.modal-close-button-svg:focus {
+  fill: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border-radius: 30px;
+}
+
 .modal-close-button-svg path {
   fill:#000000;
 }
@@ -1656,4 +1705,14 @@ input[type='number'] {
 
 .modal-button svg:active {
   fill: rgba(117, 97, 87, 0.3);
+}
+
+.photo-residence {
+  object-fit: cover;
+  height: 100%;
+}
+
+.photo-grand-canyon {
+  object-fit: cover;
+  height: 100%;
 }
