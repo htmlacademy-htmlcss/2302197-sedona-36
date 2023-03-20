@@ -969,6 +969,7 @@ padding-top: 102px;
   position: relative;
 }
 
+
 .select-control:hover {
   border-color: #68A2CA;
 }
@@ -979,9 +980,10 @@ padding-top: 102px;
 }
 
 .select-control:disabled {
-  border-color: rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
+  border-color: #000000
+  color: #000000
   outline: none;
+  opacity: 0.3;
 }
 
 .button-view {
