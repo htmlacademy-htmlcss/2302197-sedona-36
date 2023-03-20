@@ -980,8 +980,8 @@ padding-top: 102px;
 }
 
 .select-control:disabled {
-  border-color: #000000
-  color: #000000
+  border-color: #000000;
+  color: #000000;
   outline: none;
   opacity: 0.3;
 }
